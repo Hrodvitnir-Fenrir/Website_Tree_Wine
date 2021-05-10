@@ -1,0 +1,113 @@
+html {
+    font-size: 50px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    /* background-color: #1f1f1f; */
+}
+
+/* ENTÊTE DU SITE */
+
+.logo {
+    width: 30%;
+    margin: 2% 2%;
+    padding-bottom: 2%;
+}
+
+header {
+    background-color: #973540;
+    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 100%);
+    z-index: 10;
+    position: relative;
+    border: 3px;
+}
+
+header > div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    flex: auto;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: 1rem;
+}
+
+.citation {
+    background-color: #1f1f1f;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 39%);
+    height: 500px;
+    margin-top: -20%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 9;
+}
+
+p {
+    align-self: center;
+    width: 50%;
+    color: #973540;
+    font-size: 0.6rem;
+    text-align: right;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+
+/* PAGE PRINCIPALE */
+
+
+/* .vine {
+    background-size: cover; 
+    height: 100vh; 
+    background-position: 50% 50%;
+} */
+
+.image {
+    width: 60%;
+    clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%);
+    position: relative;
+    margin-top: -220px;
+    z-index: 6;
+    background-image: url("IMG_7412.JPG");
+    height: 650px; 
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.download {
+    background-color: #ddd8b8;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%);
+    position: relative;
+    z-index: 5;
+    flex: 1.5;
+    padding-left: 50%;
+    padding-top: 100px;
+    margin-top: -650px;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 300px;
+}
+
