@@ -1,5 +1,9 @@
+@charset "utf-8";
+
 html {
     font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    background-color: #212529;
 }
 * {
     padding: 0;
@@ -7,44 +11,37 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-    /* background-color: #1f1f1f; */
-}
-
 /* ENTÊTE DU SITE */
 
 .logo {
-    width: 30%;
+    width: 10%;
     margin: 2% 2%;
     padding-bottom: 2%;
 }
 
 header {
     background-color: #973540;
-    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0 90%);
     z-index: 10;
     position: relative;
     border: 3px;
 }
 
 header > div {
-    width: 50%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .name {
     flex: auto;
-    align-self: center;
-    text-align: center;
-    padding-bottom: 10%;
-    font-size: 1rem;
+    padding-bottom: 5%;
+    font-size: 2rem;
+    margin-left: 2%;
 }
 
 .citation {
-    background-color: #1f1f1f;
+    background-color: #212529;
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 39%);
     height: 500px;
     margin-top: -20%;
@@ -54,34 +51,26 @@ header > div {
     z-index: 9;
 }
 
-p {
+.pCitation {
     align-self: center;
     width: 50%;
     color: #973540;
-    font-size: 0.6rem;
     text-align: right;
-    padding-right: 5%;
-    padding-top: 2%;
+    padding-right: 1%;
+    padding-top: 3%;
+    font-weight: bold;
 }
-
 
 /* PAGE PRINCIPALE */
 
-
-/* .vine {
-    background-size: cover; 
-    height: 100vh; 
-    background-position: 50% 50%;
-} */
-
 .image {
-    width: 60%;
+    width: 55%;
     clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%);
     position: relative;
     margin-top: -220px;
     z-index: 6;
     background-image: url("IMG_7412.JPG");
-    height: 650px; 
+    height: 670px;
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,21 +82,212 @@ p {
 
 .download {
     background-color: #ddd8b8;
+    color: #212529;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%);
     position: relative;
     z-index: 5;
     flex: 1.5;
-    padding-left: 50%;
+    padding-left: 53%;
     padding-top: 100px;
-    margin-top: -650px;
-    height: 200%;
+    margin-top: -670px;
+    height: 670px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     justify-content: center;
+    color: #455f5e;
 }
 
+.present {
+    text-align: justify;
+    font-size: 0.5rem;
+    padding: 2%;
+}
+
+.presentApp {
+    text-align: justify;
+    font-size: 0.5rem;
+    color: #455f5e;
+    padding-left: 7%;
+    padding: 2% 2% 2% 7%;
+}
+
+
+#tree {
+    padding-left: 5%;
+}
+
+.dl {
+    width: 60%;
+}
+
+.getIt {
+    padding-left: 10%;
+}
+
+div > a {
+    align-self: flex-end;
+    padding-top: 2%;
+}
+
+
+/* 2nd PARTIE DU MAIN */
+
+.bottle {
+    background-image: url("IMG_7419.jpg");
+    height: 500px;
+    background-position: 100% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px #455f5e solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.bottle > h6 {
+    grid-column: 1 /span 5;
+    text-align: center;
+    color: #ddd8b8;
+    padding-top: 20px;
+
+}
+
+
+
+.panel {
+    font-size: 0.5rem;
+    color: #ddd8b8;
+    text-align: center;
+    background-color: #455f5ece;
+    border-radius: 20px;
+    align-self: center;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+@keyframes head {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.panel:hover::after {
+    animation-name: head;
+    animation-duration: 2s;
+    transform: scale(1.5);
+    content: ", pour des suggestions toujours en accord avec vos goûts.";
+}
+
+.cave {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 0.5rem;
+    color: #ddd8b8;
+    background-color: #455f5ece;
+    text-align: center;
+    border-radius: 20px;
+    align-self: center;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.cave:hover::after {
+    animation-name: head;
+    animation-duration: 2s;
+    transform: scale(1.5);
+    content: ", où vous enregistrez les vins déjà bus, et ceux qui vous font envie !";
+}
+
+.comment {
+    font-size: 0.5rem;
+    color: #ddd8b8;
+    background-color: #455f5ece;
+    text-align: center;
+    border-radius: 20px;
+    align-self: center;
+    margin-left: 5px;
+    padding: 5px;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.comment:hover::after {
+    animation-name: head;
+    animation-duration: 2s;
+    transform: scale(1.5);
+    content: ", donnez votre avis et consultez celui des autres.";
+}
+
+.search {
+    font-size: 0.5rem;
+    color: #ddd8b8;
+    background-color: #455f5ece;
+    text-align: center;
+    border-radius: 20px;
+    align-self: center;
+    margin-left: 5px;
+    padding: 5px;
+    grid-row: 3;
+    grid-column: 4;
+}
+
+.search:hover::after {
+    animation-name: head;
+    animation-duration: 2s;
+    transform: scale(1.5);
+    content: ", un outil pour trouver exactement ce que vous voulez resentir en bouche.";
+}
+
+.identity {
+    font-size: 0.5rem;
+    color: #ddd8b8;
+    background-color: #455f5ece;
+    text-align: center;
+    border-radius: 20px;
+    align-self: center;
+    margin-left: 5px;
+    padding: 5px;
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.identity:hover::after {
+    animation-name: head;
+    animation-duration: 2s;
+    transform: scale(1.5);
+    content: ", obtenez toutes les informations sur un vin, de son lieu de production à sa composition. ";
+}
+
+
+/* FOOTER */
+
+
+
 footer {
-    margin-top: 300px;
+    background-color: #455f5e;
+    font-size: 0.5rem;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.copy {
+    align-self: center;
+}
+
+.contact {
+    flex: auto;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
 }
 
