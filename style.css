@@ -328,6 +328,7 @@ ul {
     list-style-type: none;
 }
 
+/* RESPONSIVE */
 
 
 @media (min-width: 2000px) {
@@ -436,6 +437,6 @@ ul {
     }
 
     .dl {
-        width: 40%;
+        width: 45%;
     }
 }
