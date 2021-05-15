@@ -98,17 +98,15 @@ header > div {
 }
 
 .present {
-    text-align: justify;
     font-size: 0.5rem;
-    padding: 2% 5% 2% 2%;
+    padding: 1% 5% 1% 2%;
 }
 
 .presentApp {
-    text-align: justify;
     font-size: 0.5rem;
     color: #455f5e;
     padding-left: 7%;
-    padding: 2% 5% 2% 7%;
+    padding: 1% 5% 1% 7%;
 }
 
 
@@ -126,7 +124,6 @@ header > div {
 
 div > a {
     align-self: flex-end;
-    padding-top: 2%;
 }
 
 
@@ -269,7 +266,7 @@ div > a {
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
-    content: ", un outil pour trouver exactement ce que vous voulez resentir en bouche.";
+    content: ", un outil pour trouver exactement ce que vous voulez ressentir en bouche.";
 }
 
 .identity {
